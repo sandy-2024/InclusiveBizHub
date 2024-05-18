@@ -1,20 +1,19 @@
-
+import React from 'react';
 import Navbar from "./Navbar";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Login from "./components/Login";
 import Registration from "./components/Registration";
 import Home from "./components/Home";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
 import SocialCauses from "./components/SocialCauses";
 import backgroundImage from "../src/assets/home2.png";
-
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
+import Userlogin from '../src/user/Userlogin';
 
 function App() {
+  const location = useLocation();
+
   const backgroundStyle = {
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover',
@@ -23,24 +22,29 @@ function App() {
     opacity: 1, // 50% opacity
   };
 
+  const showHeaderFooter = !['/userlogin'].includes(location.pathname);
+
   return (
-    <>
     <div style={backgroundStyle}> 
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/registration" element={<Registration />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/SocialCauses" element={<SocialCauses />} />
-        </Routes>
-        <Footer />
-      </Router>
-      </div>
-    </>
+      {showHeaderFooter && <Navbar />}
+      <Routes>
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/SocialCauses" element={<SocialCauses />} />
+        <Route path="/userlogin" element={<Userlogin />} />
+      </Routes>
+      {showHeaderFooter && <Footer />}
+    </div>
   );
 }
 
-export default App;
+const AppWrapper = () => (
+  <Router>
+    <App />
+  </Router>
+);
+
+export default AppWrapper;

@@ -12,7 +12,7 @@ const About = () => {
     </h2>
     <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      S and S Tech Company is a dynamic and innovative technology firm specializing in the development of cutting-edge websites and mobile applications. With a commitment to excellence, we leverage the latest technologies and design principles to create user-friendly and visually stunning digital solutions tailored to meet the unique needs of our clients.
+      InclusiveBizHub is driven by a set of ambitious goals and objectives aimed at creating a positive impact on society and the business community alike. Our first objective is to raise awareness and inspire active participation in pressing social causes, leveraging our platform to amplify voices and mobilize action. We are committed to fostering collaboration among communities, both locally and globally, to address regional and worldwide challenges effectively.
       </div>
     </div>
   </div>

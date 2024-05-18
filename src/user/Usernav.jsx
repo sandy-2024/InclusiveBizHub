@@ -1,42 +1,93 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 
 const Usernav = () => {
   return (
     <>
-      <div style={{backgroundColor: "#d0d5db", height: 100}}>
-      
-      <ul class="nav nav-underline">
-      <li class="nav-item">
-<img src="./src/assets/logo.png"alt="InclusiveBizHub"
-              height={130}
-              width={130} />
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <Link className="navbar-brand" to="#">
+            <img
+              src="./src/assets/logo.svg"
+              alt="InclusiveBizHub"
+              height={100}
+              width={100}
+              className="object-contain"
               
+            />
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="#"
+                >
+                  Add Causes
+                </Link>
               </li>
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#" style={{marginTop: 40}}>Add Causes</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#" style={{marginTop: 40}}>My Cause list</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#" style={{marginTop: 40}}>Participations</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true" style={{marginTop: 40}}>Upcoming Events</a>
-  </li>
-  <li class="nav-item dropdown" style={{marginTop: 40, marginLeft: 800}}>
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Profile</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">My Profile</a></li>
-      <li><a class="dropdown-item" href="#">Settings</a></li>
-      <li><a class="dropdown-item" href="#">Logout</a></li>
-    </ul>
-  </li>
-</ul>
-      </div>
+              <li className="nav-item">
+                <Link className="nav-link" to="#">
+                  My participations
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="#">
+                  List
+                </Link>
+              </li>
+              
+            </ul>
+
+            <div className="dropdown">
+              <Link
+                className="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style={{ paddingRight: "5rem" }}
+              >
+                Profile
+              </Link>
+              <ul className="dropdown-menu">
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    My Profile
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    Setting
+                  </Link>
+                </li>
+                <li>
+                  <hr className="dropdown-divider" />
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/">
+                    Logout
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </>
+    
   );
 };
 

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 
 
@@ -12,6 +12,27 @@ const Home = () => {
     padding: "20px", // Add padding as needed
     borderRadius: "20px",
     opacity: 1, // Optional: Add border radius for rounded corners
+  };
+
+  const buttonStyle = {
+    margin: '0 10px', // Add some space between buttons
+    padding: '10px 20px',
+    fontSize: '16px',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+  };
+
+  const blueButtonStyle = {
+    ...buttonStyle,
+    backgroundColor: 'blue',
+    color: 'white',
+  };
+
+  const lightBlueButtonStyle = {
+    ...buttonStyle,
+    backgroundColor: 'lightblue',
+    color: 'black',
   };
 
   
@@ -32,6 +53,16 @@ const Home = () => {
         </div>
       </div>
       
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Link to="/login">
+        <button style={blueButtonStyle}>Join us</button>
+        </Link>
+        <Link to="/SocialCauses">
+      <button style={lightBlueButtonStyle}>See Causes</button>
+      </Link>
+    </div>
+
+
       <div className="container text-center mt-5" style={containerStyle}>
         <div
           style={{
