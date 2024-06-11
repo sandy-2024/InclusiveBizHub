@@ -33,21 +33,17 @@ const Usernav = () => {
                 <Link
                   className="nav-link active"
                   aria-current="page"
-                  to="#"
+                  to="/userlogin"
                 >
                   Add Causes
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="#">
+                <Link className="nav-link" to="/Mypart">
                   My participations
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  List
-                </Link>
-              </li>
+              
               
             </ul>
 
@@ -64,15 +60,11 @@ const Usernav = () => {
               </Link>
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item" to="#">
+                  <Link className="dropdown-item" to="/myprofile">
                     My Profile
                   </Link>
                 </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Setting
-                  </Link>
-                </li>
+                
                 <li>
                   <hr className="dropdown-divider" />
                 </li>

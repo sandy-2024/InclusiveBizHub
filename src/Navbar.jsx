@@ -86,11 +86,7 @@ const Navbar = () => {
                 <li>
                   <hr className="dropdown-divider" />
                 </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Admin
-                  </Link>
-                </li>
+                
               </ul>
             </div>
           </div>
