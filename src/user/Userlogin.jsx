@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function Userlogin() {
   return (
     <>
-      <div style={{marginBottom: 60}}>
+      <div style={{ marginBottom: 60 }}>
         <Usernav />
         <div className="container d-flex flex-column align-items-center justify-content-center min-vh-50">
           <h3 className="text-center mb-4">Add causes that you want to participate in</h3>
@@ -29,10 +29,13 @@ function Userlogin() {
               <label htmlFor="formFile" className="form-label fw-bold">Add your Identity document</label>
               <input className="form-control" type="file" id="formFile" />
             </div>
-            <div className="form-floating">
+            <div className="form-floating mb-3">
               <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
               <label htmlFor="floatingTextarea" className="fw-bold">Remarks</label>
             </div>
+            
+            {/* Submit Cause button */}
+            <button type="button" className="btn btn-primary btn-lg btn-block">Submit Cause</button>
           </div>
         </div>
       </div>
