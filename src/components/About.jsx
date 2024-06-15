@@ -12,7 +12,7 @@ const About = () => {
     </h2>
     <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      InclusiveBizHub is driven by a set of ambitious goals and objectives aimed at creating a positive impact on society and the business community alike. Our first objective is to raise awareness and inspire active participation in pressing social causes, leveraging our platform to amplify voices and mobilize action. We are committed to fostering collaboration among communities, both locally and globally, to address regional and worldwide challenges effectively.
+      InclusiveBizHub is dedicated to fostering a just and equitable world. Our commitment is to support those who champion the cause of social, racial, and cultural harmony through our platform, resources, and community initiatives. At InclusiveBizHub, we believe that every voice matters. We invite you to join us in our mission to create a more inclusive, equitable, and just world. Together, we can make a difference.
       </div>
     </div>
   </div>
@@ -36,7 +36,7 @@ const About = () => {
     </h2>
     <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <strong>Welcome to InclusiveBizHub's CSR Commitment</strong> At InclusiveBizHub, our mission is to empower individuals and communities advocating for social, racial, and cultural justice. We believe in creating a platform that not only amplifies voices but also actively contributes to positive change in society. Our CSR strategy is built on the principles of inclusivity, equity, and community support.
       </div>
     </div>
   </div>
