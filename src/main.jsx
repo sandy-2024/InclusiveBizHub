@@ -8,6 +8,5 @@ import Userlogin from './user/Userlogin.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-  {/* <Userlogin/> */}
   </React.StrictMode>,
 )
